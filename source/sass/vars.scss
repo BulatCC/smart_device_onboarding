@@ -1,0 +1,23 @@
+// цвета
+$white:        #FFFFFF;
+$dark-grey:    #1B2D37;
+$grey:         #666666;
+$light-grey:   #E5E5E5;
+$blue-main:    #00B2FF;
+$preload-bg:   #333F46;
+$border-color: #ebebeb;
+
+//@media медия выражения
+
+$mobile-width:     320px;
+$tablet-width:     768px;
+$desktop-width:    1300px;
+$retina-dpi:       144dpi;
+$retina-dppx:      1.5dppx;
+
+//шрифты
+
+$pt-mono: "PTMono-Regular", "Courier New", monospace;
+$roboto: "Roboto", "Arial", sans-serif;
+$roboto-condensed: "Robotocondensed", "Arial", sans-serif;
+$roboto-condensedbold: "Robotocondensedbold", "Arial", sans-serif;
