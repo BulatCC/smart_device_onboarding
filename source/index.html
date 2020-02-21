@@ -9,7 +9,7 @@
 </head>
   <body>
     <header class="page-header">
-      <a class="page-header-logo page__logo-link" href="#">
+      <a class="page-header__logo page__logo-link" href="#">
         <img src="img/logo.svg" alt="Логотип" width="52" height="52">
         <div class="page-logo__container">
           <h1 class="page__logo-name">Smart Device</h1>
@@ -19,8 +19,29 @@
       <ul class="page-header__contacts">
         <li class="page-header__contacts-item page-header__contacts-item-mail"><a href="mailto:info@sd.ru" class="page-header__contacts-link">info@sd.ru</a></li>
         <li class="page-header__contacts-item page-header__contacts-item-phone"><a href="tel:+7(495)0005252">+7 (495) 000 52 52</a></li>
-        <li class="page-header__contacts-item page-header__contacts-item-button"><a href="#">Заказать звонок</a></li>
+        <li class="page-header__contacts-item page-header__contacts-item-button"><a class="button" href="#">Заказать звонок</a></li>
       </ul>
     </header>
+    <main>
+      <section class="promo">
+        <div class="promo__wrapper">
+          <h2 class="promo__title">Печатные платы</h2>
+          <p class="promo__slogan">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <a href="#questions" class="promo__button">
+            <span class="promo__button-text promo__button-text--destkop">Получить бесплатную консультацию</span>
+            <span class="promo__button-text promo__button-text--mobile">Бесплатная консульатция</span>
+          </a>
+          <a href="#questions" class="promo__scroll-down">Скролл вниз</a>
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/plata-mobile@1x.webp 1x, img/plata-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/plata-tablet@1x.webp 1x, img/plata-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/plata-desktop@1x.webp 1x, img/plata-desktop@2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="img/plata-mobile@1x.png 1x, img/plata-mobile@2x.png 2x">
+            <source media="(max-width: 1023px)" srcset="img/plata-tablet@1x.png 1x, img/plata-tablet@2x.png 2x">
+            <img src="img/plata-desktop@1x.png" srcset="img/plata-desktop@2x.png 2x"  alt="Промо картинка">
+          </picture>
+        </div>
+      </section>
+    </main>
 </body>
 </html>

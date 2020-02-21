@@ -20,13 +20,3 @@
   color: $darken-grey;
 }
 
-@media (max-width: $mobile-width) {
-  .page-header-logo .page-logo__container {
-    display: none;
-  }
-
-  .page-header-logo img {
-    width: 38px;
-    height: 38px;
-  }
-}

@@ -1,7 +1,9 @@
+@import 'normalize.scss';
 @import 'vars.scss';
 @import 'mixins.scss';
 @import 'global-style.scss';
 @import 'fonts.scss';
-@import 'normalize.scss';
+@import 'blocks/button.scss';
 @import 'blocks/page-header.scss';
 @import 'blocks/page-logo.scss';
+@import 'blocks/promo.scss';
