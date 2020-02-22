@@ -1,5 +1,6 @@
 .info-container {
   position: relative;
+  margin-bottom: 110px;
   padding-right: 25px;
   padding-left: 25px;
   background-image: url('../img/triangle-advantages-small.svg'),url('../img/triangle-advantages-big.svg');
@@ -33,6 +34,7 @@
   }
 
   @media (max-width: $tablet-width) {
+    margin-bottom: 83px;
     background-image: url('../img/triangle-advantages-big.svg');
     background-position: -120px 680px;
 
@@ -46,6 +48,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    margin-bottom: 65px;
     padding-right: 15px;
     padding-left: 15px;
   }

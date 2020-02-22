@@ -1,5 +1,4 @@
 .about-company {
-  margin-bottom: 110px;
   position: relative;
   max-width: 1170px;
   margin: 0 auto;
@@ -51,7 +50,6 @@
 
 @media (max-width: $tablet-width) {
   .about-company {
-    margin-bottom: 83px;
     &::before {
       width: 244px;
       height: 362px;
@@ -83,7 +81,6 @@
   .about-company {
     padding-left: 15px;
     padding-right: 15px;
-    margin-bottom: 65px;
     padding-left: 0;
 
     &::before {
