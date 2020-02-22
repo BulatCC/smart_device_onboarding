@@ -6,7 +6,7 @@
   background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url(".../img/BG-desktop@2x.png");
+    background-image: url("../img/BG-desktop@2x.png");
   }
 }
 
@@ -18,7 +18,7 @@
   margin: 0 auto;
   padding-left: 25px;
   padding-right: 25px;
-  background-image: url('../img/triangles-desktop.svg');
+  background-image: url('../img/triangles.svg');
   background-repeat: no-repeat;
   background-position: right 260px;
 }
@@ -98,12 +98,21 @@
 }
 
 @media (max-width: $tablet-width) {
+  .promo {
+    background-image: url("../img/BG-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/BG-tablet@2x.png");
+    }
+  }
+
   .promo__wrapper {
     padding-top: 201px;
     padding-bottom: 163px;
     padding-left: 88px;
-    background-image: url('../img/triangles-tablet.svg');
-    background-position: right 90px;
+    background-image: url('../img/triangles.svg');
+    background-position: calc(100% + 200px) 90px;
+    background-size: 528px 424.8px;
   }
 
   .promo__title {
@@ -139,14 +148,24 @@
 }
 
 @media (max-width: $mobile-width) {
+  .promo {
+    background-image: url("../img/BG-mobile@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/BG-mobile@2x.png");
+    }
+  }
+
   .promo__wrapper {
     max-width: 550px;
     padding-top: 316px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 70px;
-    background-image: url('../img/triangles-mobile.svg');
+    background-image: url('../img/triangles.svg');
     background-position: right 40px;
+    background-size: 501px 403.5px;
+    background-position: calc(100% + 330px) 90px;
   }
 
   .promo__title {
@@ -173,4 +192,58 @@
     right: 0;
     top: 120px;
   }
+}
+
+.info-container {
+  position: relative;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-image: url('../img/triangle-advantages-small.svg'),url('../img/triangle-advantages-big.svg');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) 370px, center 105px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 40px;
+    left: 200px;
+    width: 336px;
+    height: 324px;
+    background-image: url('../img/triangle-advantages-small.svg');
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 400px;
+    left: -300px;
+    width: 875px;
+    height: 875px;
+    background-image: url('../img/triangle-advantages-big.svg');
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url('../img/triangle-advantages-big.svg');
+    background-position: -120px 680px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
 }

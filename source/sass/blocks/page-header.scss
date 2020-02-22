@@ -43,7 +43,7 @@
     height: 14px;
     left: 0;
     top: 2px;
-    background: url('../img/icon-mail.svg') no-repeat;
+    background: url('../img/mail.svg') no-repeat;
   }
 }
 
@@ -57,7 +57,7 @@
     width: 18px;
     height: 18px;
     left: 0;
-    background: url('../img/icon-phone-call.svg') no-repeat;
+    background: url('../img/phone-call.svg') no-repeat;
   }
 }
 
@@ -67,6 +67,7 @@
 
 @media (max-width: $tablet-width) {
   .page-header {
+    padding-top: 21px;
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -104,6 +105,7 @@
 @media (max-width: $mobile-width) {
   .page-header {
     max-width: 550px;
+    padding-top: 17px;
     padding-left: 15px;
     padding-right: 15px;
   }
