@@ -1,0 +1,132 @@
+.questions {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 96px;
+  padding-bottom: 114px;
+  background-color: $blue-main;
+  background-image: url('../img/airplane-desktop@1x.png'), url('../img/triangles.svg'),url('../img/triangle-question-small.svg'), url('../img/triangle-question-big.svg');
+  background-size: 511px 288px, 636px 485px, 265px 255px, 343px 405px;
+  background-repeat: no-repeat;
+  background-position: calc(45% - 300px) 160px,calc(45% - 380px) 90px, calc(100% - 10px) 40px, calc(100% + 1px) 280px;
+}
+
+.questions__wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.questions__container {
+  max-width: 570px;
+  margin-left: auto;
+}
+
+.questions__title {
+  margin-bottom: 7px;
+  font-family: $roboto-condensed;
+  font-size: 36px;
+  line-height: 1.4;
+  color: $white;
+}
+
+.questions__text {
+  display: block;
+  margin-bottom: 49px;
+  line-height: 1.34;
+  color: $white;
+}
+
+.questions__form {
+    input[type=text] {
+      margin-right: auto;
+    }
+
+    input[type=text],
+    input[type=tel] {
+      width: 47.37%;
+      margin-bottom: 40px;
+    }
+
+    textarea {
+      margin-bottom: 43px;
+    }
+
+    button {
+      width: 270px;
+      margin-right: auto;
+    }
+
+    label[for=checkbox] {
+      max-width: 230px;
+      padding-left: 20px;
+    }
+
+}
+
+@media (max-width: $tablet-width) {
+  .questions {
+    padding-top: 83px;
+    padding-bottom: 103px;
+    padding-left: 90px;
+    padding-right: 90px;
+    background-image: none;
+  }
+
+  .questions__container {
+    max-width: 100%;
+  }
+
+  .questions__title {
+    font-size: 32px;
+  }
+
+  .questions__form {
+    input[type=text],
+    input[type=tel] {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .questions {
+    padding-top: 33px;
+    padding-bottom: 41px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .questions__title {
+    font-size: 28px;
+  }
+
+  .questions__text {
+    margin-bottom: 25px;
+  }
+
+  .questions__form {
+    input[type=text],
+    input[type=tel],
+    button,
+    textarea {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    label[for=checkbox] {
+      max-width: 100%;
+      padding-left: 40px;
+    }
+
+    input[type=checkbox] + label[for=checkbox] {
+      &::before {
+        left: 0px;
+      }
+    }
+
+    input[type=checkbox]:checked + label[for=checkbox] {
+      &::after {
+        left: 5px;
+      }
+    }
+  }
+}

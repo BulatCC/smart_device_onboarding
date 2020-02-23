@@ -1,0 +1,93 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+
+  input[type=text],
+  input[type=tel],
+  textarea {
+    padding: 14px 17px;
+    box-sizing: border-box;
+    background-color: $form-bg;
+    border: none;
+    color: $white;
+
+    &:hover {
+      outline: 1px solid $white;
+    }
+  }
+
+  input[type=text]::placeholder,
+  input[type=tel]::placeholder,
+  textarea::placeholder {
+    color: $white;
+  }
+
+  input[type=checkbox],
+  label[for=name],
+  label[for=phone],
+  label[for=ask-question] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+  }
+
+  textarea {
+    width: 100%;
+    resize: none;
+  }
+
+  button {
+    display: block;
+    padding: 14px;
+    text-align: center;
+    font-size: 14px;
+    font-family: $roboto-condensedbold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    letter-spacing: 0.7px;
+    background-color: transparent;
+    border: 1px solid $white;
+    color: $white;
+  }
+
+  label[for=checkbox] {
+    position: relative;
+    align-self: center;
+    font-size: 14px;
+    color: $white;
+  }
+
+  input[type=checkbox] + label[for=checkbox] {
+    &::before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      left: -20px;
+      bottom: 13px;
+      height: 16px;
+      border: 1px solid $white;
+    }
+  }
+
+  input[type=checkbox]:checked + label[for=checkbox] {
+    &::after {
+      content: '';
+      position: absolute;
+      width: 7px;
+      height: 5px;
+      left: -15px;
+      bottom: 21px;
+      border-bottom: 1px solid white;
+      border-left: 1px solid white;
+      transform: rotate(-45deg);
+    }
+  }
+
+}
+
