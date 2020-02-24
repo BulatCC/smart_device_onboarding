@@ -1,10 +1,10 @@
-.page__logo-link {
+.page__logo {
   display: flex;
   align-items: center;
   @include hover-active;
 }
 
-.page__logo-link img {
+.page__logo img {
   margin-right: 16px;
 }
 

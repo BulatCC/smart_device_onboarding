@@ -16,3 +16,39 @@
   }
 }
 
+@mixin minus {
+  &::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 1px;
+    right: 0;
+    top: 30px;
+    background-color: $darken-grey;
+    opacity: 0.5;
+  }
+}
+
+@mixin plus {
+  &::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 1px;
+    right: 0;
+    top: 30px;
+    background-color: $darken-grey;
+    opacity: 0.5;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 16px;
+    right: 7px;
+    top: 23px;
+    background-color: $darken-grey;
+    opacity: 0.5;
+  }
+}

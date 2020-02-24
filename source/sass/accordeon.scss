@@ -1,0 +1,17 @@
+@media (max-width: $mobile-width) {
+  .accordeon {
+    display: none;
+  }
+
+  .accordeon--active {
+    display: block;
+  }
+
+  .accordeon__toggle {
+    @include plus;
+  }
+
+  .accordeon__tooggle--active {
+    @include minus;
+  }
+}
