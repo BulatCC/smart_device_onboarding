@@ -55,7 +55,7 @@
       margin-right: auto;
     }
 
-    label[for=checkbox] {
+    label:last-child {
       max-width: 230px;
       padding-left: 20px;
     }
@@ -112,7 +112,7 @@
       margin-bottom: 30px;
     }
 
-    label[for=checkbox] {
+    label:last-child {
       max-width: 100%;
       padding-left: 40px;
     }
