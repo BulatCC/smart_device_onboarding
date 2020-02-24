@@ -23,9 +23,7 @@
   }
 
   input[type=checkbox],
-  label[for=name],
-  label[for=phone],
-  label[for=ask-question] {
+  label:not(:last-child) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -59,7 +57,7 @@
     @include hover-active;
   }
 
-  label[for=checkbox] {
+  label:last-child {
     position: relative;
     align-self: center;
     font-size: 14px;
@@ -68,7 +66,7 @@
     @include hover-active;
   }
 
-  input[type=checkbox] + label[for=checkbox] {
+  input[type=checkbox] + span {
     &::before {
       content: '';
       position: absolute;
@@ -80,7 +78,7 @@
     }
   }
 
-  input[type=checkbox]:checked + label[for=checkbox] {
+  input[type=checkbox]:checked + span {
     &::after {
       content: '';
       position: absolute;

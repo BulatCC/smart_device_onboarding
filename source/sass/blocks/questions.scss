@@ -117,13 +117,13 @@
       padding-left: 40px;
     }
 
-    input[type=checkbox] + label[for=checkbox] {
+    input[type=checkbox] + span {
       &::before {
         left: 0px;
       }
     }
 
-    input[type=checkbox]:checked + label[for=checkbox] {
+    input[type=checkbox]:checked + span {
       &::after {
         left: 5px;
       }
