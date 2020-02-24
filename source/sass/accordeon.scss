@@ -9,9 +9,11 @@
 
   .accordeon__toggle {
     @include plus;
+    cursor: pointer;
   }
 
   .accordeon__tooggle--active {
     @include minus;
+    cursor: pointer;
   }
 }
