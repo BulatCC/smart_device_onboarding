@@ -1,14 +1,14 @@
-.social__list {
+.social-list {
   display: flex;
 
   @include reset-list;
 }
 
-.social__item {
+.social-list__item {
   margin-right: 40px;
 }
 
-.social__link {
+.social-list__link {
   position: relative;
   font-size: 0;
 
@@ -25,14 +25,14 @@
   }
 }
 
-.social__link--odnoklassniki {
+.social-list__link--odnoklassniki {
   &::before {
     left: 1px;
     background: url("../img/social-odnoklasniki.svg") no-repeat;
   }
 }
 
-.social__link--vkontakte {
+.social-list__link--vkontakte {
   &::before {
     left: 1px;
     background: url("../img/social-vkontakte.svg") no-repeat;
@@ -40,11 +40,11 @@
 }
 
 @media (max-width: $tablet-width) {
-  .social__item {
+  .social-list__item {
     margin-right: 41px;
   }
 
-  .social__link {
+  .social-list__link {
     &::before {
       left: 13px;
       top: -18px;
@@ -53,7 +53,7 @@
 }
 
 @media (max-width: $mobile-width) {
-  .social__list {
+  .social-list__{
     margin-right: 12px;
   }
 }

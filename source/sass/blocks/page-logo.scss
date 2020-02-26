@@ -1,21 +1,22 @@
-.page__logo {
+.page-logo {
   display: flex;
   align-items: center;
 
   @include hover-active;
 }
 
-.page__logo img {
+.page-logo img {
   margin-right: 16px;
 }
 
-.page__logo-name {
-  font-family: $roboto-condensedbold;
+.page-logo__name {
+  font-family: $roboto-condensed;
+  font-weight: 700;
   font-size: 25px;
   color: $white;
 }
 
-.page__logo-slogan {
+.page-logo__slogan {
   font-family: $roboto;
   font-size: 12px;
   color: $darken-grey;
