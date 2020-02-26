@@ -8,16 +8,17 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal--active{
+.modal--active {
   display: flex;
 }
 
 .modal__container {
   position: relative;
   margin: 0 auto;
+  z-index: 20;
   display: flex;
   flex-direction: column;
   max-width: 490px;
@@ -41,8 +42,8 @@
 }
 
 .modal__form {
-  input[type=text],
-  input[type=tel],
+  input[type="text"],
+  input[type="tel"],
   button,
   textarea {
     width: 100%;
@@ -54,13 +55,13 @@
     padding-left: 40px;
   }
 
-  input[type=checkbox] + span {
+  input[type="checkbox"] + span {
     &::before {
-      left: 0px;
+      left: 0;
     }
   }
 
-  input[type=checkbox]:checked + span {
+  input[type="checkbox"]:checked + span {
     &::after {
       left: 5px;
     }

@@ -15,36 +15,45 @@
   @include hover-active;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 27px;
     height: 27px;
     left: 1px;
     top: 1px;
-    background: url('../img/social-facebook.svg') no-repeat;
+    background: url("../img/social-facebook.svg") no-repeat;
   }
 }
 
 .social__link--odnoklassniki {
   &::before {
     left: 1px;
-    background: url('../img/social-odnoklasniki.svg') no-repeat;
+    background: url("../img/social-odnoklasniki.svg") no-repeat;
   }
 }
 
 .social__link--vkontakte {
   &::before {
     left: 1px;
-    background: url('../img/social-vkontakte.svg') no-repeat;
+    background: url("../img/social-vkontakte.svg") no-repeat;
   }
 }
 
 @media (max-width: $tablet-width) {
-  .social__link {
+  .social__item {
+    margin-right: 41px;
+  }
 
+  .social__link {
     &::before {
-      left: 1px;
+      left: 13px;
       top: -18px;
     }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .social__list {
+    margin-right: 12px;
   }
 }

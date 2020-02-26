@@ -1,9 +1,10 @@
 .contacts__title {
-  margin-bottom: 29px;
+  margin-bottom: 25px;
   font-family: $roboto-condensed;
   font-size: 15px;
   text-transform: uppercase;
-  letter-spacing: 1.2px;
+  letter-spacing: 1px;
+  font-weight: normal;
   line-height: 16px;
   color: $dark-grey;
 }
@@ -13,7 +14,7 @@
 }
 
 .contacts__addres,
-.contacts__phone  {
+.contacts__phone {
   font-size: 15px;
   font-style: normal;
   line-height: 25px;
@@ -25,8 +26,9 @@
   .contacts__title {
     position: relative;
     padding-top: 28px;
-    padding-bottom: 28px;
+    padding-bottom: 31px;
     margin-bottom: 0;
+    letter-spacing: 0.8px;
   }
 
   .contacts__list {

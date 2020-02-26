@@ -18,12 +18,12 @@
 
 @mixin minus {
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 16px;
     height: 1px;
     right: 0;
-    top: 30px;
+    top: 36px;
     background-color: $darken-grey;
     opacity: 0.5;
   }
@@ -31,23 +31,23 @@
 
 @mixin plus {
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 16px;
     height: 1px;
     right: 0;
-    top: 30px;
+    top: 36px;
     background-color: $darken-grey;
     opacity: 0.5;
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 1px;
     height: 16px;
     right: 7px;
-    top: 23px;
+    top: 29px;
     background-color: $darken-grey;
     opacity: 0.5;
   }

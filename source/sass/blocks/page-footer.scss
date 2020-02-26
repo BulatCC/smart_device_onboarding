@@ -6,15 +6,15 @@
   display: flex;
   max-width: 1410px;
   padding-top: 65px;
-  padding-bottom: 55px;
+  padding-bottom: 58px;
   padding-right: 25px;
   padding-left: 25px;
   margin: 0 auto;
 }
 
-.page-footer-logo  {
-    margin-bottom: 53px;
-    margin-right: 206px;
+.page-footer-logo {
+  margin-bottom: 40px;
+  margin-right: 206px;
 
   .page__logo-name {
     color: $footer-logo;
@@ -26,12 +26,12 @@
 }
 
 .page-footer__nav {
-  width: 540px;
+  width: 546px;
   margin-right: auto;
 }
 
 .page-footer__copyright {
-  border-top: 1px solid rgba(98,105,98,.2);
+  border-top: 1px solid rgba(98, 105, 98, 0.2);
 }
 
 @media (max-width: $tablet-width) {
@@ -45,18 +45,20 @@
 
   .page-footer__nav,
   .page-footer__contacts {
-    padding: 38px 25px;
+    padding-right: 25px;
+    padding-left: 25px;
     padding-top: 38px;
+    padding-bottom: 36px;
     width: 50%;
     box-sizing: border-box;
   }
 
   .page-footer__nav {
-    padding-right: 0;
+    padding-right: 15px;
   }
 
   .page-footer__contacts {
-    padding-left: 0;
+    padding-left: 15px;
   }
 
   .page-footer__container {
@@ -67,7 +69,7 @@
     padding-bottom: 26px;
     padding-left: 25px;
     padding-right: 25px;
-    border-bottom: 1px solid rgba(98,105,98,.2);
+    border-bottom: 1px solid rgba(98, 105, 98, 0.2);
   }
 
   .page-footer-logo {
@@ -78,7 +80,10 @@
   .page-footer__exictense {
     display: block;
     margin-right: auto;
+    margin-top: 9px;
     font-size: 13px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
     color: $dark-grey;
     opacity: 0.5;
   }
@@ -88,17 +93,17 @@
   .page-footer__container {
     flex-direction: column;
     padding-top: 46px;
-    padding-bottom: 54px;
+    padding-bottom: 58px;
   }
 
   .page-footer-logo {
     margin-right: 0;
-    margin-bottom: 26px;
+    margin-bottom: 23px;
   }
 
   .page-footer__exictense {
     margin-right: 0;
-    margin-bottom: 31px;
+    margin-bottom: 41px;
   }
 
   .page-footer__nav,
@@ -108,6 +113,6 @@
   }
 
   .page-footer__nav {
-    border-bottom: 1px solid rgba(98,105,98,.2);
+    border-bottom: 1px solid rgba(98, 105, 98, 0.2);
   }
 }

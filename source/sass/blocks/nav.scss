@@ -1,9 +1,10 @@
 .nav__title {
-  margin-bottom: 29px;
+  margin-bottom: 25px;
   font-family: $roboto-condensed;
   font-size: 15px;
+  font-weight: normal;
   text-transform: uppercase;
-  letter-spacing: 1.2px;
+  letter-spacing: 1px;
   line-height: 16px;
   color: $dark-grey;
 }
@@ -43,12 +44,7 @@
     padding-top: 28px;
     padding-bottom: 28px;
     margin-bottom: 0;
-
-
-  }
-
-  .nav__title--active {
-   @include plus;
+    letter-spacing: 0.8px;
   }
 
   .nav__list {

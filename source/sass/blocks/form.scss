@@ -2,10 +2,10 @@
   display: flex;
   flex-wrap: wrap;
 
-  input[type=text],
-  input[type=tel],
+  input[type="text"],
+  input[type="tel"],
   textarea {
-    padding: 14px 17px;
+    padding: 16px 17px;
     box-sizing: border-box;
     background-color: $form-bg;
     border: none;
@@ -16,13 +16,13 @@
     }
   }
 
-  input[type=text]::placeholder,
-  input[type=tel]::placeholder,
+  input[type="text"]::placeholder,
+  input[type="tel"]::placeholder,
   textarea::placeholder {
     color: $white;
   }
 
-  input[type=checkbox],
+  input[type="checkbox"],
   label:not(:last-child) {
     position: absolute;
     width: 1px;
@@ -38,6 +38,7 @@
   textarea {
     width: 100%;
     resize: none;
+    min-height: 104px;
   }
 
   button {
@@ -66,31 +67,29 @@
     @include hover-active;
   }
 
-  input[type=checkbox] + span {
+  input[type="checkbox"] + span {
     &::before {
-      content: '';
+      content: "";
       position: absolute;
-      width: 16px;
-      left: -20px;
+      width: 15px;
+      left: -11px;
       bottom: 13px;
-      height: 16px;
+      height: 15px;
       border: 1px solid $white;
     }
   }
 
-  input[type=checkbox]:checked + span {
+  input[type="checkbox"]:checked + span {
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 7px;
       height: 5px;
-      left: -15px;
+      left: -6px;
       bottom: 21px;
       border-bottom: 1px solid white;
       border-left: 1px solid white;
       transform: rotate(-45deg);
     }
   }
-
 }
-

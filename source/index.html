@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smart device - Умные решения</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensedbold.woff2" as="font" crossorigin="anonymous">
 </head>
   <body>
     <div style="display: none;">
@@ -22,7 +24,7 @@
       <ul class="page-header__contacts">
         <li class="page-header__contacts-item page-header__contacts-item-mail"><a href="mailto:info@sd.ru" class="page-header__contacts-link">info@sd.ru</a></li>
         <li class="page-header__contacts-item page-header__contacts-item-phone"><a href="tel:+7(495)0005252">+7 (495) 000 52 52</a></li>
-        <li class="page-header__contacts-item page-header__contacts-item-button"><a class="button" href="#">Заказать звонок</a></li>
+        <li class="page-header__contacts-item page-header__contacts-item-button"><a class="button page-header__contacts-button" href="#">Заказать звонок</a></li>
       </ul>
     </header>
     <main>
@@ -53,24 +55,24 @@
               <li class="advantages__item">
                 <svg class="advantages__item-icon" width="30" height="36"><use xlink:href="#icon-stopwatch"></use></svg>
                 <h3 class="advantages__item-title">Оперативные сроки</h3>
-                <p class="advanatges__item-text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+                <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
               </li>
               <li class="advantages__item">
                 <svg class="advantages__item-icon" width="35" height="35"><use xlink:href="#icon-hired"></use></svg>
                 <h3 class="advantages__item-title">Крупные поставщики</h3>
-                <p class="advanatges__item-text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
+                <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
                 </p>
               </li>
               <li class="advantages__item">
                 <svg class="advantages__item-icon" width="36" height="31"><use xlink:href="#icon-detective"></use></svg>
                 <h3 class="advantages__item-title">Полная конфиденциальность</h3>
-                <p class="advanatges__item-text">По желанию клиента  мы обеспечиваем полную конфеденциальность.
+                <p>По желанию клиента  мы обеспечиваем полную конфеденциальность.
                 </p>
               </li>
               <li class="advantages__item">
                 <svg class="advantages__item-icon" width="35" height="35"><use xlink:href="#icon-tag"></use></svg>
                 <h3 class="advantages__item-title">Персонализация стоимости</h3>
-                <p class="advanatges__item-text">Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+                <p>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
               </li>
             </ul>
           </div>
@@ -133,7 +135,7 @@
             <form class="questions__form form" action="#" method="GET">
               <input type="text" name="name" id="name" placeholder="Имя" required>
               <label for="name">Ваше имя</label>
-              <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+              <input type="tel" name="phone" id="phone" placeholder="Телефон" maxlength="11" required>
               <label for="phone">Ваш номер телефона</label>
               <textarea name="ask-question" id="ask-question" cols="30" rows="6" placeholder="Ваш вопрос"></textarea>
               <label for="ask-question">Задайте ваш вопрос</label>
@@ -181,8 +183,8 @@
           </ul>
         </nav>
         <div class="page-footer__contacts contacts">
-          <h3 class="contacts__title accordeon__toggle accordeon__tooggle--active">Наш офис</h3>
-          <ul class="contacts__list">
+          <h3 class="contacts__title accordeon__toggle">Наш офис</h3>
+          <ul class="contacts__list accordeon">
             <li class="contacts__item"><address class="contacts__addres">г. Мытищи, Олимпийский проспект, д.10</address></li>
             <li class="contacts__item"><a href="tel:+7(495)589-40-50" class="contacts__phone">+7 (495) 589-40-50</a></li>
             <li class="contacts__item"><a href="tel:+7(925)003-87-67" class="contacts__phone">+7 (925) 003-87-67</a></li>
@@ -209,9 +211,9 @@
         <h2 class="modal__title">Закажите звонок</h2>
         <span class="modal__text">Оставьте контакты, мы проконсультируем Вас бесплатно в удобное время</span>
         <form class="modal__form form" action="#" method="GET">
-          <input type="text" name="name-callback" id="name-callback" placeholder="Имя" required>
+          <input type="text" name="name-callback" id="name-callback" placeholder="Имя" autofocus required>
           <label for="name-callback">Ваше имя</label>
-          <input type="tel" name="phone-callback" id="phone-callback" placeholder="Телефон" required>
+          <input type="tel" name="phone-callback" id="phone-callback" maxlength="11" placeholder="Телефон" required>
           <label for="phone-callback">Ваш номер телефона</label>
           <textarea name="ask-question-callback" id="ask-question-callback" cols="30" rows="6" placeholder="Ваш вопрос"></textarea>
           <label for="ask-question-callback">Задайте ваш вопрос</label>
@@ -222,5 +224,8 @@
         <button class="modal-button" type="button"></button>
       </div>
     </div>
+    <script src="js/script.js"></script>
+    <script src="js/picturefill.js"></script>
+    <script src="js/vendor.js"></script>
 </body>
 </html>
