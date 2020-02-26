@@ -95,7 +95,7 @@
 
   // валидация по номеру телефона
   var validation = function () {
-    window.iMask(phoneNumber, {mask: '+{7}(000)000-00-00'});
+    window.iMaskJS(phoneNumber, {mask: '+{7}(000)000-00-00'});
   };
 
   // запускает работу с модальным окном
