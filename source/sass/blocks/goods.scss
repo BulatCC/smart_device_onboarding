@@ -137,8 +137,10 @@
     line-height: 39px;
   }
 
-  .goods__item:not(:last-child) {
-    margin-bottom: 30px;
+  .goods__item {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   .goods__item-title {

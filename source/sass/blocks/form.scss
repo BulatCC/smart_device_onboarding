@@ -58,13 +58,15 @@
     @include hover-active;
   }
 
-  label:last-child {
-    position: relative;
-    align-self: center;
-    font-size: 14px;
-    color: $white;
+  label {
+    &:last-child {
+      position: relative;
+      align-self: center;
+      font-size: 14px;
+      color: $white;
 
-    @include hover-active;
+      @include hover-active;
+    }
   }
 
   input[type="checkbox"] + span {

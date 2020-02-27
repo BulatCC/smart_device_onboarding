@@ -34,7 +34,10 @@
 }
 
 .copyright__link {
-  @include hover-active;
+  &:hover {
+    opacity: 1;
+    transition: 0.2s;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -62,7 +65,9 @@
     align-items: center;
   }
 
-  .copyright__link:first-child {
-    margin-bottom: 21px;
+  .copyright__link {
+    &:first-child {
+      margin-bottom: 21px;
+    }
   }
 }

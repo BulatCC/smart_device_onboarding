@@ -50,9 +50,11 @@
     margin-bottom: 30px;
   }
 
-  label:last-child {
-    width: 337px;
-    padding-left: 40px;
+  label {
+    &:last-child {
+      width: 337px;
+      padding-left: 40px;
+    }
   }
 
   input[type="checkbox"] + span {

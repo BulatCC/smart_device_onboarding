@@ -56,9 +56,11 @@
     margin-right: auto;
   }
 
-  label:last-child {
-    max-width: 230px;
-    padding-left: 20px;
+  label {
+    &:last-child {
+      max-width: 230px;
+      padding-left: 20px;
+    }
   }
 }
 
@@ -138,9 +140,11 @@
       margin-bottom: 29px;
     }
 
-    label:last-child {
-      max-width: 100%;
-      padding-left: 35px;
+    label {
+      &:last-child {
+        max-width: 100%;
+        padding-left: 35px;
+      }
     }
 
     input[type="checkbox"] + span {

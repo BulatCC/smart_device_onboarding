@@ -16,6 +16,8 @@
   display: block;
   margin-bottom: 40px;
   margin-right: 206px;
+
+  @include hover-active;
 }
 
 .page-footer__exictense {

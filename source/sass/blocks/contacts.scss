@@ -13,6 +13,13 @@
   @include reset-list;
 }
 
+.contacts__item a {
+  &:hover {
+    opacity: 1;
+    transition: 0.2s;
+  }
+}
+
 .contacts__addres,
 .contacts__phone {
   font-size: 15px;
