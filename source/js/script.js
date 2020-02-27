@@ -27,8 +27,11 @@
   // поле имя
   var userName = modal.querySelector('#name-callback');
 
-  // поле номер телефона
-  var phoneNumber = modal.querySelector('#phone-callback');
+  // поле номер телефона попапа
+  var phoneNumberModal = modal.querySelector('#phone-callback');
+
+  // поле номер телефона общик
+  var phoneNumberQuestions = document.querySelector('#phone');
 
   // текстовое поле
   var textField = modal.querySelector('#ask-question-callback');
@@ -51,22 +54,32 @@
     if (isLocalStorageEnabled) {
       form.addEventListener('submit', function () {
         localStorage.setItem('name', userName.value);
-        localStorage.setItem('phone', phoneNumber.value);
+        localStorage.setItem('phone', phoneNumberModal.value);
         localStorage.setItem('message', textField.value);
       });
     }
   };
 
   // аккордеон
-  siteMapTitle.addEventListener('click', function () {
-    siteMapTitle.classList.toggle('accordeon__toggle--active');
-    siteMapList.classList.toggle('accordeon__list--active');
-  });
+  var accordeon = function (title1, list1, title2, list2) {
+    title1.addEventListener('click', function () {
+      if (!title1.classList.contains('accordeon__toggle--active')) {
+        title1.classList.add('accordeon__toggle--active');
+        list1.classList.add('accordeon__list--active');
+        if (title2.classList.contains('accordeon__toggle--active')) {
+          title2.classList.remove('accordeon__toggle--active');
+          list2.classList.remove('accordeon__list--active');
+        }
+      } else
+      if (title1.classList.contains('accordeon__toggle--active')) {
+        title1.classList.remove('accordeon__toggle--active');
+        list1.classList.remove('accordeon__list--active');
+      }
+    });
+  };
 
-  contactsTitle.addEventListener('click', function () {
-    contactsTitle.classList.toggle('accordeon__toggle--active');
-    contactsList.classList.toggle('accordeon__list--active');
-  });
+  accordeon(siteMapTitle, siteMapList, contactsTitle, contactsList);
+  accordeon(contactsTitle, contactsList, siteMapTitle, siteMapList);
 
   // закрывает попап
   var removeModal = function () {
@@ -95,8 +108,10 @@
 
   // валидация по номеру телефона
   var validation = function () {
-    window.iMaskJS(phoneNumber, {mask: '+{7}(000)000-00-00'});
+    window.iMaskJS(phoneNumberModal, {mask: '+{7}(000)000-00-00'});
   };
+
+  window.iMaskJS(phoneNumberQuestions, {mask: '+{7}(000)000-00-00'});
 
   // запускает работу с модальным окном
   callButton.addEventListener('click', function (evt) {
