@@ -1,13 +1,13 @@
 .promo {
   margin-top: -89px;
   background-color: $dark-grey;
-  background-image: url("../img/bg-desktop@1x.png");
+  background-image: url("../img/bg_desktop@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-desktop@2x.png");
+    background-image: url("../img/bg_desktop@2x.png");
   }
 }
 
@@ -103,10 +103,10 @@
 
 @media (max-width: $tablet-width) {
   .promo {
-    background-image: url("../img/bg-tablet@1x.png");
+    background-image: url("../img/bg_tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-tablet@2x.png");
+      background-image: url("../img/bg_tablet@2x.png");
     }
   }
 
@@ -156,10 +156,10 @@
 
 @media (max-width: $mobile-width) {
   .promo {
-    background-image: url("../img/bg-mobile@1x.png");
+    background-image: url("../img/bg_mobile@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-mobile@2x.png");
+      background-image: url("../img/bg_mobile@2x.png");
     }
   }
 
