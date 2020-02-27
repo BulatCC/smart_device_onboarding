@@ -11,6 +11,12 @@
 
 .page-header__logo {
   margin-right: auto;
+
+  @include hover-active;
+}
+
+.page-header__logo-img--mobile {
+  display: none;
 }
 
 .page-header__contacts {
@@ -116,18 +122,17 @@
     padding-right: 15px;
   }
 
+  .page-header__logo-img--desktop {
+    display: none;
+  }
+
+  .page-header__logo-img--mobile {
+    display: block;
+  }
+
   .page-header__contacts-item-mail a {
     &::before {
       left: 25px;
     }
-  }
-
-  .page-header__logo .page-logo__container {
-    display: none;
-  }
-
-  .page-header__logo img {
-    width: 38px;
-    height: 38px;
   }
 }

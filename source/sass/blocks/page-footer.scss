@@ -12,13 +12,10 @@
   margin: 0 auto;
 }
 
-.page-footer-logo {
+.page-footer__logo {
+  display: block;
   margin-bottom: 40px;
   margin-right: 206px;
-
-  .page-logo__name {
-    color: $footer-logo;
-  }
 }
 
 .page-footer__exictense {
@@ -72,7 +69,7 @@
     border-bottom: 1px solid rgba(98, 105, 98, 0.2);
   }
 
-  .page-footer-logo {
+  .page-footer__logo {
     margin-bottom: 0;
     margin-right: 87px;
   }
@@ -96,7 +93,7 @@
     padding-bottom: 58px;
   }
 
-  .page-footer-logo {
+  .page-footer__logo {
     margin-right: 0;
     margin-bottom: 23px;
   }

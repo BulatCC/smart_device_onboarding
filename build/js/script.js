@@ -60,12 +60,12 @@
   // аккордеон
   siteMapTitle.addEventListener('click', function () {
     siteMapTitle.classList.toggle('accordeon__toggle--active');
-    siteMapList.classList.toggle('accordeon--active');
+    siteMapList.classList.toggle('accordeon__list--active');
   });
 
   contactsTitle.addEventListener('click', function () {
     contactsTitle.classList.toggle('accordeon__toggle--active');
-    contactsList.classList.toggle('accordeon--active');
+    contactsList.classList.toggle('accordeon__list--active');
   });
 
   // закрывает попап
