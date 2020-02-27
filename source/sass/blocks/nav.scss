@@ -26,6 +26,8 @@
   line-height: 25px;
   color: $dark-grey;
   opacity: 0.5;
+
+  @include hover-active;
 }
 
 @media (max-width: $tablet-width) {

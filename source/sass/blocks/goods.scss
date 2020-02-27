@@ -2,7 +2,7 @@
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 93px;
-  padding-bottom: 127px;
+  padding-bottom: 97px;
   background-color: $dark-grey;
 }
 
@@ -21,6 +21,7 @@
 
 .goods__list {
   display: flex;
+  flex-wrap: wrap;
 
   @include reset-list;
 }
@@ -29,11 +30,12 @@
   position: relative;
   width: 31.7%;
   max-height: 620px;
+  margin-bottom: 30px;
   overflow: hidden;
-}
 
-.goods__item:not(:last-child) {
-  margin-right: auto;
+  &:not(:nth-child(3n)) {
+    margin-right: auto;
+  }
 }
 
 .goods__item a {
@@ -98,6 +100,10 @@
   .goods__item {
     width: 100%;
     max-height: 256px;
+
+    &:not(:last-child) {
+      margin-bottom: 46px;
+    }
   }
 
   .goods__item a {
@@ -113,10 +119,6 @@
   .goods__item-title {
     left: 45px;
     top: 40px;
-  }
-
-  .goods__item:not(:last-child) {
-    margin-bottom: 46px;
   }
 }
 
